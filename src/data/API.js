@@ -43,11 +43,3 @@ export async function fetchData(request) {
   const res = handler[query["action"]]({ data: data, query: query });
   return res;
 }
-
-//test block
-/**/
-console.log("testing");
-const request = "https://restaurant.com/filter/type/Dishes";
-fetchData(request).then((res) => {
-  console.log(res);
-});
