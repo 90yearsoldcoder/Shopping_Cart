@@ -1,0 +1,23 @@
+#root {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* variables.css */
+:root {
+  --primary-bg-color: #efefef;
+  --sidebar-bg-color: #3c3744;
+  --main-container-bg-color: #ffffff;
+  --font-stack: "Arial", sans-serif;
+  --padding: 16px;
+}
