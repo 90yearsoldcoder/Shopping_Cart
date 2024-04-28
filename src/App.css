@@ -17,7 +17,11 @@ body {
 :root {
   --primary-bg-color: #efefef;
   --sidebar-bg-color: #3c3744;
+  --secondary-bg-color: #090c9b;
   --main-container-bg-color: #ffffff;
   --font-stack: "Arial", sans-serif;
   --padding: 16px;
+
+  --font-color-sidebar: #fbfff1;
+  --font-color-primary: #3c3744;
 }

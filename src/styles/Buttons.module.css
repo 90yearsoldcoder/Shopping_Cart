@@ -1,0 +1,26 @@
+.NavButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0);
+  width: calc(100% - 3rem);
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+  color: var(--font-color-sidebar);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-stack);
+}
+
+.active {
+  background-color: var(--font-color-sidebar);
+  color: var(--font-color-primary);
+}
+
+.pending {
+  background-color: grey;
+}
