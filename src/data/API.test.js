@@ -31,4 +31,9 @@ describe("fetchData", () => {
     );
     expect(data).toHaveProperty("error");
   });
+
+  it("returns all data", async () => {
+    const data = await fetchData("https://restaurant.com/filter/type/Dishes");
+    expect(data).toEqual(backendData);
+  });
 });
