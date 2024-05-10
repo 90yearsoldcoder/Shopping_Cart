@@ -41,7 +41,7 @@ function App() {
           My Cart
         </NavLink>
       </div>
-      <div>
+      <div className={layout.main}>
         <Outlet></Outlet>
       </div>
     </>
