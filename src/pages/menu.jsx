@@ -1,16 +1,13 @@
 import layout from "../styles/Layout.module.css";
+import Products from "../components/products";
 
 function Menu() {
   return (
     <>
       <div>Header</div>
       <div className={layout.Menu_grid}>
-        <div>TBD</div>
-        <div>TBD</div>
-        <div>TBD</div>
-        <div>TBD</div>
-        <div>TBD</div>
-        <div>TBD</div>
+        <Products></Products>
+        <Products></Products>
       </div>
     </>
   );

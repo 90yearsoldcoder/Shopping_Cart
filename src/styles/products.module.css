@@ -1,0 +1,10 @@
+.product_card {
+  display: flex;
+
+  width: min(calc(100% - 1.6rem), 300px);
+  height: calc(100% - 1.6rem);
+  margin: 0.3rem;
+  padding: 0.5rem;
+
+  box-shadow: 0.3rem 0.3rem 1.2px;
+}
