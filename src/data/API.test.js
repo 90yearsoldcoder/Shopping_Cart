@@ -7,7 +7,17 @@ import { Error } from "../settings/apiSetting";
 describe("fetchData", () => {
   it("returns expected data", async () => {
     const data = await fetchData("https://restaurant.com/filter/type/Dishes");
-    expect(data).toEqual(backendData);
+
+    let flag = true;
+
+    for (let key in data) {
+      if (data[key]["type"] != "Dishes") {
+        flag = false;
+        break;
+      }
+    }
+
+    expect(flag).toBe(true);
   });
 
   it("returns error when no specific request", async () => {
@@ -33,7 +43,29 @@ describe("fetchData", () => {
   });
 
   it("returns all data", async () => {
-    const data = await fetchData("https://restaurant.com/filter/type/Dishes");
+    const data = await fetchData("https://restaurant.com/All");
     expect(data).toEqual(backendData);
+  });
+
+  it("only featured data, in simple style", async () => {
+    const data = await fetchData("https://restaurant.com/filter/featured/true");
+
+    console.log(data);
+    let flag = true;
+
+    for (let key in data) {
+      if (data[key]["featured"] != "true") {
+        flag = false;
+        break;
+      }
+    }
+
+    expect(flag).toBe(true);
+  });
+
+  it("get detail of an Item with id 1", async () => {
+    const data = await fetchData("https://restaurant.com/detail/1");
+
+    expect(data).toEqual(backendData[1]);
   });
 });
