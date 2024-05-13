@@ -50,7 +50,7 @@ describe("fetchData", () => {
   it("only featured data, in simple style", async () => {
     const data = await fetchData("https://restaurant.com/filter/featured/true");
 
-    console.log(data);
+    //console.log(data);
     let flag = true;
 
     for (let key in data) {
