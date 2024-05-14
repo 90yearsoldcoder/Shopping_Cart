@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Outlet, NavLink } from "react-router-dom";
 import "./App.css";
 import layout from "./styles/Layout.module.css";

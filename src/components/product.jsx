@@ -1,16 +1,15 @@
 import PropTypes from "prop-types";
 import style from "../styles/products.module.css";
 
-const Products = ({ product, cart }) => {
+const Product = ({ product, cart }) => {
   //const num = product["id"] in cart ? cart[product["id"]] : 0;
-
-  return <div className={style.product_card}>{product}</div>;
+  console.log(product);
+  return <div className={style.product_card}>{product["name"]}</div>;
 };
 
-/*  
-Products.propTypes = {
+Product.propTypes = {
   product: PropTypes.object.isRequired,
   cart: PropTypes.object.isRequired,
 };
-*/
-export default Products;
+
+export default Product;
