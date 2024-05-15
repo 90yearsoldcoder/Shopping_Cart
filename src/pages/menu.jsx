@@ -16,7 +16,12 @@ function Menu() {
         {Object.values(featuredProducts).map((value) => {
           //console.log(value);
           return (
-            <Product key={value["id"]} product={value} cart={cart}></Product>
+            <Product
+              key={value["id"]}
+              product={value}
+              cart={cart}
+              setCart={cartSetter}
+            ></Product>
           );
         })}
       </div>
