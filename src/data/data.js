@@ -28,7 +28,7 @@ export const data = {
   3: {
     id: 3,
     name: "Spicy Sichuan Chicken (辣子鸡)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$12.99",
     preview: "/preview_pic/laziji/preview.jpg",
@@ -72,7 +72,7 @@ export const data = {
   7: {
     id: 7,
     name: "Kung Pao Chicken (宫保鸡丁)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$13.99",
     preview: "/preview_pic/kungpaochicken/preview.jpg",
@@ -94,7 +94,7 @@ export const data = {
   9: {
     id: 9,
     name: "Wonton Soup (馄饨汤)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$7.99",
     preview: "/preview_pic/wontonsoup/preview.jpg",
@@ -116,7 +116,7 @@ export const data = {
   11: {
     id: 11,
     name: "Sesame Balls (芝麻球)",
-    featured: "true",
+    featured: "false",
     type: "Dessert",
     price: "$4.99",
     preview: "/preview_pic/sesameballs/preview.jpg",
@@ -160,7 +160,7 @@ export const data = {
   15: {
     id: 15,
     name: "Char Siu (叉烧)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$10.99",
     preview: "/preview_pic/charsiu/preview.jpg",
@@ -182,7 +182,7 @@ export const data = {
   17: {
     id: 17,
     name: "Mango Sago (杨枝甘露)",
-    featured: "true",
+    featured: "false",
     type: "Dessert",
     price: "$5.99",
     preview: "/preview_pic/mangosago/preview.jpg",
@@ -204,7 +204,7 @@ export const data = {
   19: {
     id: 19,
     name: "General Tso's Chicken (左宗棠鸡)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$12.99",
     preview: "/preview_pic/generaltsos/preview.jpg",
@@ -336,7 +336,7 @@ export const data = {
   31: {
     id: 31,
     name: "Egg Drop Soup (蛋花汤)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$4.99",
     preview: "/preview_pic/eggdropsoup/preview.jpg",
@@ -358,7 +358,7 @@ export const data = {
   33: {
     id: 33,
     name: "Green Tea Ice Cream (绿茶冰淇淋)",
-    featured: "true",
+    featured: "false",
     type: "Dessert",
     price: "$4.99",
     preview: "/preview_pic/greenteaicecream/preview.jpg",
@@ -380,7 +380,7 @@ export const data = {
   35: {
     id: 35,
     name: "Sweet and Sour Fish (糖醋鱼)",
-    featured: "true",
+    featured: "false",
     type: "Dishes",
     price: "$13.99",
     preview: "/preview_pic/sweetandsourfish/preview.jpg",
@@ -402,7 +402,7 @@ export const data = {
   37: {
     id: 37,
     name: "Tofu Pudding (豆花)",
-    featured: "true",
+    featured: "false",
     type: "Dessert",
     price: "$3.99",
     preview: "/preview_pic/tofupudding/preview.jpg",
@@ -446,7 +446,7 @@ export const data = {
   41: {
     id: 41,
     name: "Tea Eggs (茶叶蛋)",
-    featured: "true",
+    featured: "false",
     type: "Staple",
     price: "$2.99",
     preview: "/preview_pic/teaeggs/preview.jpg",
@@ -490,7 +490,7 @@ export const data = {
   45: {
     id: 45,
     name: "Mochi (麻糬)",
-    featured: "true",
+    featured: "false",
     type: "Dessert",
     price: "$3.99",
     preview: "/preview_pic/mochi/preview.jpg",
