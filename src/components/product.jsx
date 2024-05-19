@@ -20,11 +20,13 @@ const Product = ({ product, cart, setCart }) => {
 
   return (
     <div className={style.product_card}>
-      <img
-        src={product["preview"]}
-        alt={imgNotFound}
-        className={style.product_img}
-      />
+      <div className={style.product_img_container}>
+        <img
+          src={product["preview"]}
+          alt={imgNotFound}
+          className={style.product_img}
+        />
+      </div>
       <div className={style.name}>{product["name"]}</div>
       <div className={style.quantity_controls}>
         <button className={style.quantity_button} onClick={() => changeNum(-1)}>
