@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import style from "../styles/products.module.css";
 import imgNotFound from "../assets/imgNotFound.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Product = ({ product, cart, setCart }) => {
   const num = product["id"] in cart ? cart[product["id"]] : 0;
@@ -28,14 +30,35 @@ const Product = ({ product, cart, setCart }) => {
         />
       </div>
       <div className={style.name}>{product["name"]}</div>
-      <div className={style.quantity_controls}>
-        <button className={style.quantity_button} onClick={() => changeNum(-1)}>
-          -
-        </button>
-        <span className="quantity">{num}</span>
-        <button className={style.quantity_button} onClick={() => changeNum(+1)}>
-          +
-        </button>
+      <div className={style.footContainer}>
+        <div className={style.price}>{product["price"]}</div>
+        <div className={style.quantity_controls}>
+          {num == 0 ? (
+            <></>
+          ) : num == 1 ? (
+            <button
+              className={style.quantity_button}
+              onClick={() => changeNum(-1)}
+            >
+              <FontAwesomeIcon icon={faTrash} />
+            </button>
+          ) : (
+            <button
+              className={style.quantity_button}
+              onClick={() => changeNum(-1)}
+            >
+              -
+            </button>
+          )}
+          {num == 0 ? <></> : <span className="quantity">{num}</span>}
+
+          <button
+            className={style.quantity_button}
+            onClick={() => changeNum(+1)}
+          >
+            +
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 # Todo list
 
 - [x] Hover effect for product cards
-- [ ] Add price and clear minus button when number is 0
+- [x] Add price and clear minus button when number is 0
 - [ ] Search API
 - [ ] Header for category and search bar
 - [ ] Detail page for products
