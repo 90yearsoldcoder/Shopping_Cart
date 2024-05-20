@@ -68,4 +68,20 @@ describe("fetchData", () => {
 
     expect(data).toEqual(backendData[1]);
   });
+
+  it("search items by name", async () => {
+    const data = await fetchData("https://restaurant.com/search/chicken");
+
+    let flag = true;
+
+    for (let key in data) {
+      //console.log(data[key]["name"]);
+      if (data[key]["name"].toLowerCase().includes("chicken") != true) {
+        flag = false;
+        break;
+      }
+    }
+
+    expect(flag).toBe(true);
+  });
 });

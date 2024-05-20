@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 - [x] Hover effect for product cards
 - [x] Add price and clear minus button when number is 0
-- [ ] Search API
+- [x] Search API
 - [ ] Header for category and search bar
 - [ ] Detail page for products
 - [ ] Design Cart page
