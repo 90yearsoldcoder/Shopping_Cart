@@ -11,8 +11,17 @@ function Menu() {
 
   return (
     <>
-      <div>Header</div>
       <div className={layout.Menu_grid}>
+        <div className={layout.Menu_header}>
+          <div className={layout.Menu_cate}>
+            <div className={layout.Menu_cate_item}>FEATURE</div>
+            <div className={layout.Menu_cate_item}>APPETIZERS</div>
+            <div className={layout.Menu_cate_item}>DISHES</div>
+            <div className={layout.Menu_cate_item}>STAPLE</div>
+            <div className={layout.Menu_cate_item}>DESSERT</div>
+            <div className={layout.Menu_cate_item}>DRINK</div>
+          </div>
+        </div>
         {Object.values(featuredProducts).map((value) => {
           //console.log(value);
           return (

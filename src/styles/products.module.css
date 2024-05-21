@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-  width: min(calc(100% - 1.6rem), 300px);
   height: calc(100% - 1.6rem);
   margin: 0.3rem;
   padding: 0;
