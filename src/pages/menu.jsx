@@ -5,6 +5,7 @@ import SearchBar from "../components/searchBar";
 import { useState } from "react";
 import { useMenuCache } from "../cache/menuCache";
 import { cate2Key } from "../settings/cacheSetting";
+import { Loading } from "../components/loading";
 
 function Menu() {
   //context
@@ -63,7 +64,9 @@ function Menu() {
             );
           })
         ) : (
-          <>loading</>
+          <div className={layout.Menu_loading_container}>
+            <Loading></Loading>
+          </div>
         )}
       </div>
     </>

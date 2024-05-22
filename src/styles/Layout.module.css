@@ -52,6 +52,13 @@
   border-bottom: 1px solid var(--color5);
 }
 
+.Menu_loading_container {
+  display: flex;
+  grid-column: 1/-1;
+  align-items: center;
+  justify-content: center;
+}
+
 .Menu_grid {
   width: 100%;
 

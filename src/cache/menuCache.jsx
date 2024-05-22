@@ -33,7 +33,7 @@ export const MenuCacheProvider = ({ children }) => {
     //Be careful, the setState in React is async
     setMenuCache((preCache) => {
       const updatedCache = { ...preCache, [cate]: data }; // Use [cate] to use the value of cate as the key
-      console.log(updatedCache); // Logs the new state after the update
+      //console.log(updatedCache); // Logs the new state after the update
       return updatedCache;
     });
   }
@@ -45,7 +45,7 @@ export const MenuCacheProvider = ({ children }) => {
         : await fetchData(`https://restaurant.com/search/${name}`);
     setMenuCache((preCache) => {
       const updatedCache = { ...preCache, search: data }; // Use [cate] to use the value of cate as the key
-      console.log(updatedCache); // Logs the new state after the update
+      //console.log(updatedCache); // Logs the new state after the update
       return updatedCache;
     });
   }
