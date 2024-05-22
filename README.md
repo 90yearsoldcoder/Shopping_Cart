@@ -13,6 +13,8 @@ Currently, two official plugins are available:
 - [x] Add price and clear minus button when number is 0
 - [x] Search API
 - [ ] Header for category and search bar
+- [ ] Add loading page when fetching data
+- [ ] Add logo to sideBar
 - [ ] Detail page for products
 - [ ] Design Cart page
 - [ ] Design Home page

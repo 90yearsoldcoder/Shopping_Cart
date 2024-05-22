@@ -48,6 +48,10 @@
   border-bottom: 1px solid var(--color5);
 }
 
+.active {
+  border-bottom: 1px solid var(--color5);
+}
+
 .Menu_grid {
   width: 100%;
 
