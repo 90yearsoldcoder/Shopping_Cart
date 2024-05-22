@@ -9,7 +9,8 @@ import { cate2Key } from "../settings/cacheSetting";
 function Menu() {
   //context
   const { cart, cartSetter } = useCart();
-  const { menuCache, updateMenuCache_byCate } = useMenuCache();
+  const { menuCache, updateMenuCache_byCate, updateMenuCache_bySearch } =
+    useMenuCache();
 
   //state
   const [activeCategory, setActiveCategory] = useState("featured");
@@ -44,7 +45,10 @@ function Menu() {
               </div>
             ))}
           </div>
-          <SearchBar></SearchBar>
+          <SearchBar
+            setActiveCategory={setActiveCategory}
+            updateMenuCache_bySearch={updateMenuCache_bySearch}
+          ></SearchBar>
         </div>
         {activeCategory in menuCache ? (
           Object.values(menuCache[activeCategory]).map((value) => {

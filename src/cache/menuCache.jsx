@@ -38,8 +38,22 @@ export const MenuCacheProvider = ({ children }) => {
     });
   }
 
+  async function updateMenuCache_bySearch(name) {
+    const data =
+      name === ""
+        ? {}
+        : await fetchData(`https://restaurant.com/search/${name}`);
+    setMenuCache((preCache) => {
+      const updatedCache = { ...preCache, search: data }; // Use [cate] to use the value of cate as the key
+      console.log(updatedCache); // Logs the new state after the update
+      return updatedCache;
+    });
+  }
+
   return (
-    <menuContext.Provider value={{ menuCache, updateMenuCache_byCate }}>
+    <menuContext.Provider
+      value={{ menuCache, updateMenuCache_byCate, updateMenuCache_bySearch }}
+    >
       {children}
     </menuContext.Provider>
   );
