@@ -2,6 +2,7 @@ import layout from "../styles/Layout.module.css";
 import Product from "../components/product";
 import { useFeaturedProducts } from "../cache/featuredDataProvider";
 import { useCart } from "../cache/cartProvider";
+import SearchBar from "../components/searchBar";
 
 function Menu() {
   const featuredProducts = useFeaturedProducts();
@@ -21,6 +22,7 @@ function Menu() {
             <div className={layout.Menu_cate_item}>DESSERT</div>
             <div className={layout.Menu_cate_item}>DRINK</div>
           </div>
+          <SearchBar></SearchBar>
         </div>
         {Object.values(featuredProducts).map((value) => {
           //console.log(value);
