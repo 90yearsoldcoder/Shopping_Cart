@@ -14,7 +14,8 @@ Currently, two official plugins are available:
 - [x] Search API
 - [x] Header for category and search bar
 - [x] Add loading page when fetching data
-- [ ] Add logo to sideBar
+- [x] Add logo to sideBar
+- [ ] set Router to detail pate
 - [ ] Detail page for products
 - [ ] Design Cart page
 - [ ] Design Home page
