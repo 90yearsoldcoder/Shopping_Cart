@@ -15,8 +15,12 @@ Currently, two official plugins are available:
 - [x] Header for category and search bar
 - [x] Add loading page when fetching data
 - [x] Add logo to sideBar
-- [ ] set Router to detail pate
-- [ ] Detail page for products
+- [x] set Router to detail pate
+- [ ] design Detail page for products
+  - [ ] layout of detail page
+  - [ ] display pictures of the product
+  - [ ] Title and desc of the product
+  - [ ] Cart button
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title

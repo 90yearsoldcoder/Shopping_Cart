@@ -24,6 +24,7 @@
   height: 80%;
   border-radius: 0.8rem 0.8rem 0 0;
   max-width: 100%;
+  cursor: pointer;
 
   overflow: hidden;
 }
@@ -51,6 +52,7 @@
 
   font-family: var(--font-stack);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .footContainer {

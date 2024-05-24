@@ -3,6 +3,7 @@ import style from "../styles/products.module.css";
 import imgNotFound from "../assets/imgNotFound.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Product = ({ product, cart, setCart }) => {
   const num = product["id"] in cart ? cart[product["id"]] : 0;
@@ -20,16 +21,29 @@ const Product = ({ product, cart, setCart }) => {
     setCart(newCart);
   };
 
+  const navigate = useNavigate();
+  const handleNavigation = (id) => {
+    navigate(`/detail/${id}`);
+  };
+
   return (
     <div className={style.product_card}>
-      <div className={style.product_img_container}>
+      <div
+        className={style.product_img_container}
+        onClick={() => handleNavigation(product["id"])}
+      >
         <img
           src={product["preview"]}
           alt={imgNotFound}
           className={style.product_img}
         />
       </div>
-      <div className={style.name}>{product["name"]}</div>
+      <div
+        className={style.name}
+        onClick={() => handleNavigation(product["id"])}
+      >
+        {product["name"]}
+      </div>
       <div className={style.footContainer}>
         <div className={style.price}>{product["price"]}</div>
         <div className={style.quantity_controls}>
