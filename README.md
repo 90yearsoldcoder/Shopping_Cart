@@ -25,7 +25,7 @@ Currently, two official plugins are available:
 - [x] Add logo to sideBar
 - [x] set Router to detail pate
 - [ ] design Detail page for products
-  - [ ] full product-info cache
+  - [x] full product-info cache
   - [ ] layout of detail page
   - [ ] display pictures of the product
   - [ ] Title and desc of the product
