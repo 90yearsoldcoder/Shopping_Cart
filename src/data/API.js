@@ -13,9 +13,11 @@ async function fakeNetwork(key) {
     return;
   }
 
-  fakeCache[key] = true;
   return new Promise((res) => {
-    setTimeout(res, Math.random() * 800);
+    setTimeout(() => {
+      fakeCache[key] = true;
+      res();
+    }, Math.random() * 1000);
   });
 }
 
@@ -38,7 +40,7 @@ function parseURL(url) {
 }
 
 export async function fetchData(request) {
-  await fakeNetwork(request);
+  await fakeNetwork(request).then();
   const query = parseURL(request);
   const res = handler[query["action"]]({ data: data, query: query });
   return res;
