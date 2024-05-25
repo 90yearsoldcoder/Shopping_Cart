@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.displayContainer {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+}
+
+.infoContainer {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+}

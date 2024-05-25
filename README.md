@@ -26,10 +26,11 @@ Currently, two official plugins are available:
 - [x] set Router to detail pate
 - [ ] design Detail page for products
   - [x] full product-info cache
-  - [ ] layout of detail page
+  - [x] layout of detail page
   - [ ] display pictures of the product
   - [ ] Title and desc of the product
   - [ ] Cart button
+  - [ ] Back button
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title
