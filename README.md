@@ -31,7 +31,7 @@ Currently, two official plugins are available:
   - [x] Title, desc and price of the product
   - [ ] Cart button
   - [ ] Back button
-  - [ ] Loading page
+  - [x] Loading page
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title
