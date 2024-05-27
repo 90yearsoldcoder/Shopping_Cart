@@ -24,7 +24,11 @@ const Detail = () => {
               ]}
             ></Gallery>
           </div>
-          <div className={style.infoContainer}></div>
+          <div className={style.infoContainer}>
+            <div className={style.title}>{detailCache[id]["name"]}</div>
+            <div className={style.desc}>{detailCache[id]["Desc"]}</div>
+            <div className={style.title}>{detailCache[id]["price"]}</div>
+          </div>
         </div>
       ) : (
         <div>Loading the details of {id} product</div>

@@ -28,9 +28,10 @@ Currently, two official plugins are available:
   - [x] full product-info cache
   - [x] layout of detail page
   - [x] display pictures of the product
-  - [ ] Title and desc of the product
+  - [x] Title, desc and price of the product
   - [ ] Cart button
   - [ ] Back button
+  - [ ] Loading page
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title

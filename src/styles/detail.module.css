@@ -7,12 +7,30 @@
 
 .displayContainer {
   display: flex;
-  width: 50%;
-  height: 60vh;
+  width: 60%;
+  height: 80vh;
 }
 
 .infoContainer {
   display: flex;
-  width: 50%;
-  height: 60vh;
+  flex-direction: column;
+  width: 40%;
+  height: 80vh;
+}
+
+.title {
+  margin: 0.3rem;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: (--font-stack);
+}
+
+.desc {
+  margin: 0.3rem;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+
+  font-size: 2rem;
+  font-family: (--font-stack);
 }
