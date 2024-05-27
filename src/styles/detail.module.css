@@ -8,11 +8,11 @@
 .displayContainer {
   display: flex;
   width: 50%;
-  height: 50vh;
+  height: 60vh;
 }
 
 .infoContainer {
   display: flex;
   width: 50%;
-  height: 50vh;
+  height: 60vh;
 }

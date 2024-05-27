@@ -27,7 +27,7 @@ Currently, two official plugins are available:
 - [ ] design Detail page for products
   - [x] full product-info cache
   - [x] layout of detail page
-  - [ ] display pictures of the product
+  - [x] display pictures of the product
   - [ ] Title and desc of the product
   - [ ] Cart button
   - [ ] Back button
