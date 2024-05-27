@@ -3,6 +3,7 @@
 
   align-items: center;
   justify-content: center;
+  height: 80vh;
 }
 
 .displayContainer {
@@ -33,4 +34,15 @@
 
   font-size: 2rem;
   font-family: (--font-stack);
+}
+
+.price {
+  margin: 0.3rem;
+  padding: 0.2rem 3rem 0.2rem 0.3rem;
+
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: (--font-stack);
+
+  text-align: end;
 }

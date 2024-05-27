@@ -3,6 +3,7 @@ import { useDetailCache } from "../cache/detailCache";
 import style from "../styles/detail.module.css";
 import { NavLink } from "react-router-dom";
 import Gallery from "../components/gallery";
+import { Loading } from "../components/loading";
 
 const Detail = () => {
   const { id } = useParams();
@@ -27,11 +28,13 @@ const Detail = () => {
           <div className={style.infoContainer}>
             <div className={style.title}>{detailCache[id]["name"]}</div>
             <div className={style.desc}>{detailCache[id]["Desc"]}</div>
-            <div className={style.title}>{detailCache[id]["price"]}</div>
+            <div className={style.price}>{detailCache[id]["price"]}</div>
           </div>
         </div>
       ) : (
-        <div>Loading the details of {id} product</div>
+        <div className={style.container}>
+          <Loading></Loading>
+        </div>
       )}
     </>
   );
