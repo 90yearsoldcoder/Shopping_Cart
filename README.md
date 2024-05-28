@@ -29,9 +29,10 @@ Currently, two official plugins are available:
   - [x] layout of detail page
   - [x] display pictures of the product
   - [x] Title, desc and price of the product
-  - [ ] Cart button
+  - [x] Cart button
   - [ ] Back button
   - [x] Loading page
+- [ ]Design a slide in Cart
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title

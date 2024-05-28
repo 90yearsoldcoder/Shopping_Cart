@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
+  padding: 2rem;
 }
 
 .displayContainer {
@@ -14,9 +15,11 @@
 
 .infoContainer {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 40%;
   height: 80vh;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .title {
@@ -34,6 +37,7 @@
 
   font-size: 2rem;
   font-family: (--font-stack);
+  color: grey;
 }
 
 .price {
@@ -45,4 +49,58 @@
   font-family: (--font-stack);
 
   text-align: end;
+}
+
+.cart_container {
+  position: absolute;
+  bottom: 10%;
+  font-size: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.quantity_control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.quantity_button {
+  display: flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 5px;
+  font-size: 3rem;
+  color: #fff;
+  background-color: var(--color1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.addToCartContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.addButton {
+  width: 90%;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  background-color: var(--color1);
+  color: var(--color5);
 }
