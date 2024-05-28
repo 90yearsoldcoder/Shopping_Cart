@@ -15,7 +15,7 @@ export const DetailCacheProvider = ({ children }) => {
     const data = await fetchData(`https://restaurant.com/detail/${id}`);
     setDetailCache((preCache) => {
       const updatedCache = { ...preCache, [id]: data }; // Use [cate] to use the value of cate as the key
-      console.log(updatedCache); // Logs the new state after the update
+      //console.log(updatedCache); // Logs the new state after the update
       return updatedCache;
     });
   }

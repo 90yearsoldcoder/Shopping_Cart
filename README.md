@@ -25,7 +25,7 @@ Currently, two official plugins are available:
 - [x] Add loading page when fetching data
 - [x] Add logo to sideBar
 - [x] set Router to detail pate
-- [ ] design Detail page for products
+- [x] design Detail page for products
   - [x] full product-info cache
   - [x] layout of detail page
   - [x] display pictures of the product
@@ -33,9 +33,10 @@ Currently, two official plugins are available:
   - [x] Cart button
   - [x] Back button
   - [x] Loading page
-- [ ] Design a slide in Cart
+- [x] Design a slide in Cart
   - [x] Layout of the slide-in Cart
-  - [ ] Content in the cart
+  - [x] Content in the cart
+- [ ] fix bug: when refresing menu page, cache can not be found before conveying
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title

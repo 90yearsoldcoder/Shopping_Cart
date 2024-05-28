@@ -7,7 +7,11 @@ import { Loading } from "../components/loading";
 import { useCart } from "../cache/cartProvider";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faPlus,
+  faMinus,
+} from "@fortawesome/free-solid-svg-icons";
 import MiniCart from "../components/miniCart";
 
 const Detail = () => {
@@ -69,14 +73,14 @@ const Detail = () => {
                   className={style.quantity_button}
                   onClick={() => changeNum(-1)}
                 >
-                  -
+                  <FontAwesomeIcon icon={faMinus} size="xs" />
                 </button>
                 <span className="quantity">{quant}</span>
                 <button
                   className={style.quantity_button}
                   onClick={() => changeNum(+1)}
                 >
-                  +
+                  <FontAwesomeIcon icon={faPlus} size="xs" />
                 </button>
               </div>
               <div className={style.addToCartContainer}>
