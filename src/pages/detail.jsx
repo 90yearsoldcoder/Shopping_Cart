@@ -8,12 +8,14 @@ import { useCart } from "../cache/cartProvider";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import MiniCart from "../components/miniCart";
 
 const Detail = () => {
   const { id } = useParams();
   const { detailCache, updateDetail } = useDetailCache();
   const { cart, cartSetter } = useCart();
   const [quant, setQuant] = useState(id in cart ? cart[id] : 0);
+  const [miniCartActive, setMiniCartActive] = useState(false);
 
   //set quant
   const changeNum = (delta) => {
@@ -30,7 +32,8 @@ const Detail = () => {
     cartSetter(newCart);
 
     //Todo: will add a slide in Cart at this moment
-    alert("A Cart sliding from right edge");
+    //alert("A Cart sliding from right edge");
+    setMiniCartActive(true);
   };
 
   updateDetail(id);
@@ -92,6 +95,11 @@ const Detail = () => {
           <Loading></Loading>
         </div>
       )}
+
+      <MiniCart
+        isActive={miniCartActive}
+        setIsActive={setMiniCartActive}
+      ></MiniCart>
     </>
   );
 };

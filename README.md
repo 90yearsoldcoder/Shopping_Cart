@@ -18,6 +18,7 @@ Currently, two official plugins are available:
 # Todo list
 
 - [x] Hover effect for product cards
+- [ ] Make header sticky
 - [x] Add price and clear minus button when number is 0
 - [x] Search API
 - [x] Header for category and search bar
@@ -32,7 +33,9 @@ Currently, two official plugins are available:
   - [x] Cart button
   - [x] Back button
   - [x] Loading page
-- [ ]Design a slide in Cart
+- [ ] Design a slide in Cart
+  - [x] Layout of the slide-in Cart
+  - [ ] Content in the cart
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title
