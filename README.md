@@ -30,7 +30,7 @@ Currently, two official plugins are available:
   - [x] display pictures of the product
   - [x] Title, desc and price of the product
   - [x] Cart button
-  - [ ] Back button
+  - [x] Back button
   - [x] Loading page
 - [ ]Design a slide in Cart
 - [ ] Design Cart page

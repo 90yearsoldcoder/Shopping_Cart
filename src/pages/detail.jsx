@@ -6,6 +6,8 @@ import Gallery from "../components/gallery";
 import { Loading } from "../components/loading";
 import { useCart } from "../cache/cartProvider";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Detail = () => {
   const { id } = useParams();
@@ -35,7 +37,13 @@ const Detail = () => {
 
   return (
     <>
-      <NavLink to="/menu">Back</NavLink>
+      <NavLink className={style.backButton} to="/menu">
+        <FontAwesomeIcon
+          icon={faArrowLeft}
+          size="xl"
+          style={{ color: "var(--color1)" }}
+        />
+      </NavLink>
       {id in detailCache ? (
         <div className={style.container}>
           <div className={style.displayContainer}>
