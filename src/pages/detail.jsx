@@ -44,13 +44,15 @@ const Detail = () => {
 
   return (
     <>
-      <NavLink className={style.backButton} to="/menu">
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          size="xl"
-          style={{ color: "var(--color1)" }}
-        />
-      </NavLink>
+      <div className={style.header}>
+        <NavLink className={style.backButton} to="/menu">
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            size="xl"
+            style={{ color: "var(--color1)" }}
+          />
+        </NavLink>
+      </div>
       {id in detailCache ? (
         <div className={style.container}>
           <div className={style.displayContainer}>

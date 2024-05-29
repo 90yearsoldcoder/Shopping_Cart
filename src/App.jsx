@@ -4,8 +4,11 @@ import layout from "./styles/Layout.module.css";
 import Button from "./styles/Buttons.module.css";
 import logo from "./assets/logo.svg";
 import logoStyle from "./styles/logo.module.css";
+import { useMenuCache } from "./cache/menuCache";
+import { Loading } from "./components/loading";
 
 function App() {
+  const { menuCache } = useMenuCache();
   return (
     <>
       <div className={layout.sideBar}>
@@ -44,7 +47,7 @@ function App() {
         </NavLink>
       </div>
       <div className={layout.main}>
-        <Outlet></Outlet>
+        {menuCache == undefined ? <Loading /> : <Outlet />}
       </div>
     </>
   );

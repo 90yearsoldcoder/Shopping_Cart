@@ -36,7 +36,7 @@ Currently, two official plugins are available:
 - [x] Design a slide in Cart
   - [x] Layout of the slide-in Cart
   - [x] Content in the cart
-- [ ] fix bug: when refresing menu page, cache can not be found before conveying
+- [x] fix bug: when refresing menu page, cache can not be found before conveying
 - [ ] Design Cart page
 - [ ] Design Home page
 - [ ] Change the icon of the website title
