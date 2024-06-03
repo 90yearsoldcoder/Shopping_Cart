@@ -37,6 +37,9 @@ Currently, two official plugins are available:
   - [x] Layout of the slide-in Cart
   - [x] Content in the cart
 - [x] fix bug: when refresing menu page, cache can not be found before conveying
-- [ ] Design Cart page
+- [x] Design Cart page
+  - [x] Layout of the cart page
+  - [x] cartItem
+  - [x] Checkout button and its link
 - [ ] Design Home page
 - [ ] Change the icon of the website title
