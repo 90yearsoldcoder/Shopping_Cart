@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.overrallContainer {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  box-sizing: border-box;
+
+  padding: 0 2rem;
+}
+
+.productsGallery {
+  display: flex;
+  flex: 0;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: 100%;
+  /* waiting to reset the min-height */
+  min-height: 20rem;
+}
+
+.footer {
+  display: flex;
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  width: 100%;
+  /* waiting to reset */
+  min-height: 8rem;
+}

@@ -2,8 +2,11 @@
   position: relative;
   overflow: hidden;
   height: 90%;
+  width: 100%;
   margin: 1rem auto;
   border-radius: 5px;
+
+  box-sizing: border-box;
 }
 
 .gallery_wrapper {

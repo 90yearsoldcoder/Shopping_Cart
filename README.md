@@ -18,7 +18,7 @@ Currently, two official plugins are available:
 # Todo list
 
 - [x] Hover effect for product cards
-- [ ] Make header sticky
+- [ ] Make header/sidebar sticky
 - [x] Add price and clear minus button when number is 0
 - [x] Search API
 - [x] Header for category and search bar
@@ -41,5 +41,10 @@ Currently, two official plugins are available:
   - [x] Layout of the cart page
   - [x] cartItem
   - [x] Checkout button and its link
-- [ ] Design Home page
+- [x] Design Home page
+  - [x] layout of the home page
+  - [ ] overview galley
+  - [ ] top/new products gallery
+  - [ ] order now
 - [ ] Change the icon of the website title
+- [ ] The cart in sidebar should have animation when new products are added.
