@@ -7,6 +7,10 @@ function Home() {
     <div className={styles.container}>
       <div className={styles.overrallContainer}>
         <Gallery images={overrallPic}></Gallery>
+        <div className={styles.nameContainer}>
+          <div style={{ fontSize: "1.7rem" }}>restaurant</div>
+          <div>Princpe Flavor</div>
+        </div>
       </div>
       <div className={styles.productsGallery}></div>
       <div className={styles.footer}></div>
