@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-const Product = ({ product, cart, setCart }) => {
+const Product = ({ product, cart, setCart, cornerTitle }) => {
   const num = product["id"] in cart ? cart[product["id"]] : 0;
   //console.log(product);
   //console.log(cart);
@@ -37,6 +37,11 @@ const Product = ({ product, cart, setCart }) => {
           alt={imgNotFound}
           className={style.product_img}
         />
+        {cornerTitle === undefined ? (
+          <></>
+        ) : (
+          <div className={style.top_badge}>{cornerTitle}</div>
+        )}
       </div>
       <div
         className={style.name}
@@ -82,6 +87,7 @@ Product.propTypes = {
   product: PropTypes.object.isRequired,
   cart: PropTypes.object.isRequired,
   setCart: PropTypes.func.isRequired,
+  cornerTitle: PropTypes.string,
 };
 
 export default Product;

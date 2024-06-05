@@ -43,8 +43,8 @@ Currently, two official plugins are available:
   - [x] Checkout button and its link
 - [x] Design Home page
   - [x] layout of the home page
-  - [ ] overview galley
-  - [ ] top/new products gallery
+  - [x] overview galley
+  - [x] top/new products gallery
   - [ ] order now
 - [ ] Change the icon of the website title
 - [ ] The cart in sidebar should have animation when new products are added.
