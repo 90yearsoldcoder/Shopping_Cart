@@ -24,3 +24,24 @@
 .pending {
   background-color: grey;
 }
+
+.plainButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-width: 20rem;
+  max-height: 40%;
+  min-height: 3rem;
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 1rem;
+
+  font-size: 1.3rem;
+}
+
+.black {
+  background-color: var(--color1);
+  color: var(--font-color-sidebar);
+}

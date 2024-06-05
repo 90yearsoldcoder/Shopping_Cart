@@ -1,15 +1,22 @@
 import styles from "../styles/home.module.css";
+import buttons from "../styles/Buttons.module.css";
 import Gallery from "../components/gallery";
 import { useMenuCache } from "../cache/menuCache";
 import { useCart } from "../cache/cartProvider";
 import Product from "../components/product";
 import { recommendation, overrallPic } from "../settings/homepicture";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   //context
   const { cart, cartSetter } = useCart();
   const { menuCache } = useMenuCache();
-  console.log(menuCache["featured"]);
+  const navigate = useNavigate();
+
+  function handleButtonClick() {
+    navigate("/menu");
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.overrallContainer}>
@@ -31,7 +38,14 @@ function Home() {
           ></Product>
         ))}
       </div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        <button
+          className={`${buttons.plainButton} ${buttons.black}`}
+          onClick={handleButtonClick}
+        >
+          Order Now!
+        </button>
+      </div>
     </div>
   );
 }
