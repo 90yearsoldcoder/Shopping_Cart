@@ -1,23 +1,30 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import style from "../styles/gallery.module.css";
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images, auto }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]); // Dependency on images.length which likely does not change
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
-  };
+  }, [images.length]); // Similar handling for prevSlide
 
-  const slideToInd = (ind) => {
+  const slideToInd = useCallback((ind) => {
     setCurrentIndex(ind);
-  };
+  }, []);
+
+  useEffect(() => {
+    if (auto == undefined || auto < 300) return;
+
+    const timer = setInterval(nextSlide, auto); // Set interval to trigger nextSlide every 2000 ms
+    return () => clearInterval(timer); // Clean up the interval on component unmount
+  }, [nextSlide, auto]);
 
   return (
     <div className={style.gallery}>
@@ -56,6 +63,7 @@ const Gallery = ({ images }) => {
 
 Gallery.propTypes = {
   images: PropTypes.array.isRequired,
+  auto: PropTypes.number.isRequired,
 };
 
 export default Gallery;

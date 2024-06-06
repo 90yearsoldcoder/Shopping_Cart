@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.overrallContainer}>
-        <Gallery images={overrallPic}></Gallery>
+        <Gallery images={overrallPic} auto={2500}></Gallery>
         <div className={styles.nameContainer}>
           <div style={{ fontSize: "1.7rem" }}>restaurant</div>
           <div>Princpe Flavor</div>
