@@ -6,9 +6,25 @@ import logo from "./assets/logo.svg";
 import logoStyle from "./styles/logo.module.css";
 import { useMenuCache } from "./cache/menuCache";
 import { Loading } from "./components/loading";
+import { useEffect } from "react";
+import logo_jpg from "./assets/logo.jpg";
 
 function App() {
   const { menuCache } = useMenuCache();
+
+  //remove the head text
+  useEffect(() => {
+    document.title = "Princpe Flavor";
+  }, []);
+
+  //remove the original icon
+  useEffect(() => {
+    const link = document.querySelector("link[rel~='icon']");
+    if (link) {
+      link.href = logo_jpg;
+    }
+  }, []);
+
   return (
     <>
       <div className={layout.sideBar}>

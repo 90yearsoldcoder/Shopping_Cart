@@ -47,5 +47,5 @@ Currently, two official plugins are available:
   - [x] top/new products gallery
   - [x] order now
   - [x] let the overview gallery rotating automaticly
-- [ ] Change the icon of the website title
+- [x] Change the icon of the website title
 - [ ] The cart in sidebar should have animation when new products are added.
