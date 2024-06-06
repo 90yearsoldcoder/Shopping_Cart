@@ -63,7 +63,7 @@ const Gallery = ({ images, auto }) => {
 
 Gallery.propTypes = {
   images: PropTypes.array.isRequired,
-  auto: PropTypes.number.isRequired,
+  auto: PropTypes.number,
 };
 
 export default Gallery;

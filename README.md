@@ -18,7 +18,7 @@ Currently, two official plugins are available:
 # Todo list
 
 - [x] Hover effect for product cards
-- [ ] Make header/sidebar sticky
+- [x] Make sidebar sticky
 - [x] Add price and clear minus button when number is 0
 - [x] Search API
 - [x] Header for category and search bar
