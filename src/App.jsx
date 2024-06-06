@@ -1,7 +1,6 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import layout from "./styles/Layout.module.css";
-import Button from "./styles/Buttons.module.css";
 import logo from "./assets/logo.svg";
 import logoStyle from "./styles/logo.module.css";
 import { useMenuCache } from "./cache/menuCache";
@@ -9,6 +8,7 @@ import { Loading } from "./components/loading";
 import { useEffect } from "react";
 import logo_jpg from "./assets/logo.jpg";
 import { useCart } from "./cache/cartProvider";
+import SideBarNav from "./components/sideBarNav";
 
 function App() {
   const { menuCache } = useMenuCache();
@@ -39,55 +39,13 @@ function App() {
     <>
       <div className={layout.sideBar}>
         <img src={logo} alt="" className={logoStyle.sidebar_logo} />
-        <NavLink
-          to="/"
-          className={({ isActive, isPending }) => {
-            return (
-              Button.NavButton +
-              " " +
-              (isActive ? Button.active : isPending ? "pending" : "")
-            );
-          }}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/menu"
-          className={({ isActive, isPending }) =>
-            Button.NavButton +
-            " " +
-            (isActive ? Button.active : isPending ? "pending" : "")
-          }
-        >
-          Menu
-        </NavLink>
-        <NavLink
-          to="/cart"
-          className={({ isActive, isPending }) =>
-            Button.NavButton +
-            " " +
-            (isActive ? Button.active : isPending ? "pending" : "")
-          }
-        >
-          {({ isActive }) => (
-            <>
-              <div className={Button.plainWord}>
-                My Cart
-                {numItems() === 0 ? (
-                  ""
-                ) : (
-                  <div
-                    className={`${Button.cornerAnno} ${
-                      !isActive ? Button.cornerAnnoInactive : ""
-                    }`}
-                  >
-                    {numItems()}
-                  </div>
-                )}
-              </div>
-            </>
-          )}
-        </NavLink>
+        <SideBarNav route={"/"} title={"Home"}></SideBarNav>
+        <SideBarNav route={"/menu"} title={"Menu"}></SideBarNav>
+        <SideBarNav
+          route={"/cart"}
+          title={"My Cart"}
+          cornerAnno={numItems() > 0 ? numItems() : "none"}
+        ></SideBarNav>
       </div>
       <div className={layout.main}>
         {menuCache == undefined ? <Loading /> : <Outlet />}
