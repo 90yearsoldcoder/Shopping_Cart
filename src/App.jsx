@@ -8,9 +8,11 @@ import { useMenuCache } from "./cache/menuCache";
 import { Loading } from "./components/loading";
 import { useEffect } from "react";
 import logo_jpg from "./assets/logo.jpg";
+import { useCart } from "./cache/cartProvider";
 
 function App() {
   const { menuCache } = useMenuCache();
+  const { cart } = useCart();
 
   //remove the head text
   useEffect(() => {
@@ -24,6 +26,14 @@ function App() {
       link.href = logo_jpg;
     }
   }, []);
+
+  const numItems = () => {
+    let count = 0;
+    for (let id of Object.keys(cart)) {
+      count += cart[id];
+    }
+    return count;
+  };
 
   return (
     <>
@@ -59,7 +69,24 @@ function App() {
             (isActive ? Button.active : isPending ? "pending" : "")
           }
         >
-          My Cart
+          {({ isActive }) => (
+            <>
+              <div className={Button.plainWord}>
+                My Cart
+                {numItems() === 0 ? (
+                  ""
+                ) : (
+                  <div
+                    className={`${Button.cornerAnno} ${
+                      !isActive ? Button.cornerAnnoInactive : ""
+                    }`}
+                  >
+                    {numItems()}
+                  </div>
+                )}
+              </div>
+            </>
+          )}
         </NavLink>
       </div>
       <div className={layout.main}>
