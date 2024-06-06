@@ -1,7 +1,7 @@
 # About this project
 
 This is a shopping website demo based on React + Vite
-Live: [WebSite]()
+Live: [WebSite](https://princpeflavor.netlify.app)
 
 # Deploy the project
 
